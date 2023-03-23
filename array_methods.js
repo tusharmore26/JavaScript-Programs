@@ -30,10 +30,19 @@ console.log(arr)
 arr2=[1,2,3,4,5,6]
 console.log(arr.concat(arr2))
 
-// spice() method
-arr.splice(0,3, "Tushar","Pune")
-console.log(arr)
+// splice() method
+newarr=[10,20,30,40,50,60]
+deletes=newarr.splice(1,3,70,80,90,100)
+console.log(newarr)
+console.log(deletes) //returns the deleted items
 
 // slice() method
-arr.slice(0,3)
-console.log(arr.slice("Tushar"))
+newarr.splice(1,4)
+console.log(newarr)
+
+// delete() method
+console.log(arr)
+console.log(arr.length)
+delete arr[0]
+console.log(arr)
+console.log(arr.length) //length of array remains same after delete operation
