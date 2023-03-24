@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Events</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <button onclick="document.getElementById('demo1').innerHTML=Date()">Click here</button>
+    <br>
+    <br>
+    <button onmouseover="document.getElementById('demo2').innerHTML=Date()">take a mouse over here</button>
+    <br><br>
+    <button onclick="this.innerHTML=Date()">Click here</button>
+    <br><br>
+
+
+    <!-- By calling a function in js -->
+    <button onclick="hello()">Click here</button>
+
+    <script>
+        function hello(){
+            alert("Hello")
+        }
+    </script>
+   
+
+</body>
+</html>
