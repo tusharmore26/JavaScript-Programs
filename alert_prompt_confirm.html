@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Alert_Promot_Confirm Demo</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // alert 
+        alert("Hello")
+
+
+        // prompt() is used to take a input from user
+        let a=prompt("Enter a value:")
+        a=Number.parseInt(a);
+        
+
+        //confirm() 
+        let write=confirm("Are you want to write this value on the page?")
+        if(write){
+            document.write(a)
+        }
+        else{
+            document.write("Please allow me to write the value.")
+        }
+
+    </script>
+</body>
+</html>
